@@ -1,0 +1,112 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* Default text color */
+    background-image: url('https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    /* Replace 'background_image.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    /* Header text color */
+    padding: 20px 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    /* Navigation text color */
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    /* Section title color */
+}
+
+footer {
+    background-color: #000;
+    /* Footer background color */
+    color: #fff;
+    /* Footer text color */
+    padding: 20px 0;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Add padding and margin to sections */
+section .container {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Section background color with opacity */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
