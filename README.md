@@ -1,2 +1,2 @@
 My site
-https://ibrahim-995.github.io/ibrahim/
+https://ibrahim-995.github.io/
